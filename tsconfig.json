@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "target": "es2020",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "allowJs": true,
+    "checkJs": false,
+    "noImplicitAny": false,
+    "importHelpers": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "types": ["vite/client", "node", "quasar", "vitest/globals"],
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "src/main.ts"],
+  "exclude": ["node_modules", "dist/**/*"]
+}
